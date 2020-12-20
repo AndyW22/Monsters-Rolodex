@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Search from './components/search';
+import Monstercards from './components/monstercards';
 
 function App() {
   return (
     <div className="App">
-      <Search />
+      <Monstercards />
     </div>
   );
 }

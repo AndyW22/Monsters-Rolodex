@@ -1,6 +1,7 @@
 import React from 'react';
 import CardList from './card-list/card-list';
 import '../App.css';
+import SearchBox from './searchbox';
 
 export default () => {
   const [text, setText] = React.useState([]);
@@ -17,13 +18,7 @@ export default () => {
 
   return (
     <div>
-      <input
-        type="search"
-        placeholder="search"
-        onChange={(e) => {
-          setsearchField(e.target.value.toLowerCase());
-        }}
-      />
+      <SearchBox placeholder="Search Monsters" onChange={setsearchField} />
       <CardList monsters={filteredmonsters} />
     </div>
   );
